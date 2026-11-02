@@ -629,6 +629,7 @@ GameObject:
   - component: {fileID: 1102339844}
   - component: {fileID: 1102339845}
   - component: {fileID: 1102339846}
+  - component: {fileID: 1102339847}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -722,16 +723,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2dbc0989af346529fde550b3d1d78d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  moveAction:
+  MoveAction:
     m_Name: Move
     m_Type: 0
     m_ExpectedControlType: Vector2
-    m_Id: 3d2db4f4-6ed2-4388-ba68-65df0507fcec
+    m_Id: f037091e-fa57-4d40-9261-a254d345d9aa
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 2D Vector
-      m_Id: a80a495c-fa28-464e-8b13-27e1be0a66fe
+      m_Id: 08179e5a-1f7a-4841-84a2-9cf530550f95
       m_Path: 2DVector
       m_Interactions: 
       m_Processors: 
@@ -739,7 +740,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 4
     - m_Name: up
-      m_Id: c84e6b1f-0f6b-4089-9a04-723908b413af
+      m_Id: 48a4efbc-6114-4b12-b3fe-e8b37dbb301c
       m_Path: <Keyboard>/w
       m_Interactions: 
       m_Processors: 
@@ -747,7 +748,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: down
-      m_Id: 09f1cd9a-79a3-4e30-b324-ecb7bd99bcc9
+      m_Id: 802a6c87-005e-4292-b790-9372cb4e1887
       m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
@@ -755,7 +756,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: left
-      m_Id: 89387c75-d0f7-46b6-9867-65c375798a71
+      m_Id: 5d8c9459-6b1d-490a-af54-86384691305d
       m_Path: <Keyboard>/a
       m_Interactions: 
       m_Processors: 
@@ -763,7 +764,7 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     - m_Name: right
-      m_Id: 927f3745-de96-4119-8891-cd395117f383
+      m_Id: 0500c174-fa76-4cef-b51f-9c9326ef033a
       m_Path: <Keyboard>/d
       m_Interactions: 
       m_Processors: 
@@ -771,7 +772,6 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     m_Flags: 0
-  moveSpeed: 3
 --- !u!50 &1102339845
 Rigidbody2D:
   serializedVersion: 5
@@ -845,6 +845,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.22, y: 0.83931994}
   m_EdgeRadius: 0
+--- !u!95 &1102339847
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102339841}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf196769cac6a7c4cb5575c36985df8e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
